@@ -4,18 +4,30 @@ public class Patron {
     private final int age;
     private final int size;
     private int time;
-    private String type;
+    private Type type;
 
-    enum type{
+    enum Type{
         CRITIC,
         BAR,
         FIRST_TIME,
         DISCOUNTED;
     }
 
+    public double getExpectedCheck() {
+        switch (this.type) {
+            case CRITIC:
+                // read csv's average critic check
+            case BAR:
+                // read csv's average bar check
+            case FIRST_TIME:
+                // read csv's average first time check
+            case DISCOUNTED:
+                // read csv's average discounted check
+        }
+        return 0; // temp temp temp
+    }
 
-
-    public Patron(int age, int size, int time, String type){
+    public Patron(int age, int size, int time, Type type){
         this.age = age;
         this.size = size;
         this.time = time;
@@ -26,10 +38,6 @@ public class Patron {
         return this.age;
     }
 
-    public double getExpectedValue() {
-
-    }
-
     public int getSize(){
         return this.size;
     }
@@ -38,7 +46,7 @@ public class Patron {
         return this.time;
     }
 
-    public String getType(){
+    public Type getType(){
         return this.type;
     }
 
@@ -46,7 +54,7 @@ public class Patron {
         this.time = time;
     }
 
-    public void setType(String type){
+    public void setType(Type type){
         this.type = type;
     }
 
