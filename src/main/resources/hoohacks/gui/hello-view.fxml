@@ -25,7 +25,7 @@
       <children>
          <StackPane prefHeight="879.0" prefWidth="521.0">
             <children>
-               <VBox prefHeight="415.0" prefWidth="354.0">
+               <VBox fx:id="simVbox" prefHeight="415.0" prefWidth="354.0">
                   <children>
                      <Label alignment="CENTER" contentDisplay="CENTER" text="Outdoor">
                         <font>
@@ -138,13 +138,13 @@
                   </children>
                </VBox>
             </children></StackPane>
-         <VBox prefHeight="200.0" prefWidth="100.0">
+         <VBox fx:id="startVbox" prefHeight="200.0" prefWidth="100.0">
             <children>
                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="49.0" prefWidth="561.0" text="In the box below, enter path to text file">
                   <font>
                      <Font name="Book Antiqua" size="18.0" />
                   </font></Label>
-               <TextField>
+               <TextField fx:id="filePath">
                   <VBox.margin>
                      <Insets top="28.0" />
                   </VBox.margin>
