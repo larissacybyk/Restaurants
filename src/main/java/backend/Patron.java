@@ -10,6 +10,7 @@ public class Patron {
         CRITIC,
         BAR,
         FIRST_TIME,
+        NORMAL,
         DISCOUNTED;
     }
 
@@ -23,6 +24,8 @@ public class Patron {
                 // read csv's average first time check
             case DISCOUNTED:
                 // read csv's average discounted check
+            case NORMAL:
+                // read csv's normal discounted echeck
         }
         return 0; // temp temp temp
     }
