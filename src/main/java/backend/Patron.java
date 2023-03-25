@@ -3,9 +3,8 @@ package backend;
 public class Patron {
     private final int age;
     private final int size;
-    private final int time;
-
-    private final String type;
+    private int time;
+    private String type;
 
     public Patron(int age, int size, int time, String type){
         this.age = age;
@@ -28,6 +27,14 @@ public class Patron {
 
     public String getType(){
         return this.type;
+    }
+
+    public void setTime(int time){
+        this.time = time;
+    }
+
+    public void setType(String type){
+        this.type = type;
     }
 
 }
