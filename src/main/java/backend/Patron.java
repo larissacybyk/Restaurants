@@ -1,9 +1,8 @@
 package backend;
 
 public class Patron {
-    public int age;
-    public int size;
-    public int start_time;
+    private int size;
+    private int start_time;
     private int end_time;
     private Type type;
     private double value = 0.0;
@@ -31,16 +30,11 @@ public class Patron {
 
 
     public Patron(){ return; }
-    public Patron(int age, int size, int start_time, int end_time, Type type){
-        this.age = age;
+    public Patron(int size, int start_time, int end_time, Type type){
         this.size = size;
         this.start_time = start_time;
         this.end_time = end_time;
         this.type = type;
-    }
-
-    public int getAge(){
-        return this.age;
     }
 
     public int getSize(){
@@ -69,6 +63,15 @@ public class Patron {
 
     public void setType(Type type){
         this.type = type;
+    }
+
+
+    public double getValue(){
+        return value;
+    }
+
+    public void setValue(double new_value){
+        value = new_value;
     }
 
 }

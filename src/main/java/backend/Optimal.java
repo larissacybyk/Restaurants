@@ -1,22 +1,23 @@
 package backend;
 
 public class Optimal extends Patron {
-    public double value;
+
     public double getCalculatedValue(){
-        return this.getExpectedCheck() * this.size;
+       return this.getExpectedCheck() * this.getSize();
     }
 
-    public double getRatioProfit(){
-        return this.getCalculatedValue() / ((this.getEnd_time() - this.getStart_time()) - 40);
-    }
+//    public double setRatioValues(){
+//        for(int i=0; i</*array of arrays of Patrons*/; i++){
+//            double total = this.getCalculatedValue() / ((this.getEnd_time() - this.getStart_time()) - 40);
+//            this.setValue(total);
+//        }
+//    }
 
 
 
-    public optimalSchedule(){
-        for(int i=0; i</*array of arrays of Patrons*/; i++){
-
-        }
-
-    }
+//    public Reservation[] optimalSchedule(){
+//        /*the array*/.forEach(function ())
+//
+//    }
 
 }

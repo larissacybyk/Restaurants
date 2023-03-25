@@ -21,9 +21,9 @@ public class Reservation {
         return end_time;
     }
 
-    public Reservation[] consolidateReservations(){
-
-    }
+//    public Reservation[] consolidateReservations(){
+//
+//    }
 
 
 
