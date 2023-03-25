@@ -1,4 +1,4 @@
-package hoohacks.restaurants;
+package hoohacks.gui;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;

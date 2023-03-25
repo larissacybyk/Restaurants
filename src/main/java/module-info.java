@@ -3,6 +3,6 @@ module hoohacks.restaurants {
     requires javafx.fxml;
 
 
-    opens hoohacks.restaurants to javafx.fxml;
-    exports hoohacks.restaurants;
+    opens hoohacks.gui to javafx.fxml;
+    exports hoohacks.gui;
 }
