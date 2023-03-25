@@ -2,15 +2,28 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="hoohacks.gui.HelloController">
+<VBox alignment="CENTER" prefHeight="800.0" prefWidth="600.0" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="hoohacks.gui.HelloController">
     <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
+    <Label fx:id="welcomeText" alignment="CENTER" focusTraversable="false" prefHeight="39.0" prefWidth="211.0" text="Table Wizard" textAlignment="CENTER" textFill="#ec00b9">
+      <font>
+         <Font size="18.0" />
+      </font></Label>
+   <StackPane prefHeight="682.0" prefWidth="560.0">
+      <children>
+         <VBox prefHeight="200.0" prefWidth="100.0">
+            <children>
+               <Label prefHeight="49.0" prefWidth="561.0" text="Instruction: in box below, enter path to text file " />
+               <TextField />
+            </children>
+         </VBox>
+      </children>
+   </StackPane>
 </VBox>
