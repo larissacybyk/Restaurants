@@ -1,10 +1,12 @@
 package backend;
 
 public class Patron {
-    private final int age;
-    private final int size;
-    private int time;
+    public int age;
+    public int size;
+    public int start_time;
+    private int end_time;
     private Type type;
+    private double value = 0.0;
 
     enum Type{
         CRITIC,
@@ -27,10 +29,13 @@ public class Patron {
         return 0; // temp temp temp
     }
 
-    public Patron(int age, int size, int time, Type type){
+
+    public Patron(){ return; }
+    public Patron(int age, int size, int start_time, int end_time, Type type){
         this.age = age;
         this.size = size;
-        this.time = time;
+        this.start_time = start_time;
+        this.end_time = end_time;
         this.type = type;
     }
 
@@ -42,16 +47,24 @@ public class Patron {
         return this.size;
     }
 
-    public int getTime(){
-        return this.time;
+    public int getStart_time(){
+        return this.start_time;
+    }
+
+    public int getEnd_time(){
+        return this.end_time;
     }
 
     public Type getType(){
         return this.type;
     }
 
-    public void setTime(int time){
-        this.time = time;
+    public void setStart_time(int start_time){
+        this.start_time = start_time;
+    }
+
+    public void setEnd_time(int end_time){
+        this.end_time = end_time;
     }
 
     public void setType(Type type){
