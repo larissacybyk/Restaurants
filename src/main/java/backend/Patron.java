@@ -6,6 +6,13 @@ public class Patron {
     private int time;
     private String type;
 
+    enum type{
+        CRITIC,
+        BAR,
+        FIRST_TIME,
+        DISCOUNTED;
+    }
+
     public Patron(int age, int size, int time, String type){
         this.age = age;
         this.size = size;
