@@ -13,6 +13,8 @@ public class Patron {
         DISCOUNTED;
     }
 
+
+
     public Patron(int age, int size, int time, String type){
         this.age = age;
         this.size = size;
@@ -22,6 +24,10 @@ public class Patron {
 
     public int getAge(){
         return this.age;
+    }
+
+    public double getExpectedValue() {
+
     }
 
     public int getSize(){
