@@ -13,6 +13,20 @@ public class Patron {
         DISCOUNTED;
     }
 
+    public double getExpectedCheck() {
+        switch (this.type) {
+            case CRITIC:
+                // read csv's average critic check
+            case BAR:
+                // read csv's average bar check
+            case FIRST_TIME:
+                // read csv's average first time check
+            case DISCOUNTED:
+                // read csv's average discounted check
+        }
+        return 0; // temp temp temp
+    }
+
     public Patron(int age, int size, int time, Type type){
         this.age = age;
         this.size = size;
