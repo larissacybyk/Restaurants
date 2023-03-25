@@ -70,7 +70,15 @@ public class UserInputReader {
         } else if (arg1.equals("avgDiscountedCheck")) {
             avgDiscountedCheck = Double.parseDouble(lineSplitOnCommas[1].strip());
         } else if (arg1.equals("reservations")) {
-
+            int it = 2;
+            int size = 0;
+            int start_t = 0;
+            int end_t = 0;
+            String type = "";
+            boolean keepGoing = true;
+            while(keepGoing) {
+                //
+            }
 
 
             
@@ -78,5 +86,6 @@ public class UserInputReader {
             avgNormalCheck = Double.parseDouble(lineSplitOnCommas[1].strip());
         }
     }
+
 
 }
