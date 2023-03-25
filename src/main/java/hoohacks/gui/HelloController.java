@@ -18,10 +18,13 @@ public class HelloController {
     @FXML
     protected void onHelloButtonClick() {
         welcomeText.setText("idk!");
-        //goButton.setOnAction(e -> );
+
     }
     public void initialize(){
-        simulation.setVisible(false);
+        //simulation.setVisible(false);
+        goButton.setOnAction(e -> {
+            onGoButton();
+        });
     }
     protected void onGoButton(){
         //run simulation with file
