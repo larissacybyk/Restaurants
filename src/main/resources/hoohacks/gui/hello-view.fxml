@@ -25,7 +25,7 @@
       </font></Label>
    <StackPane fx:id="starting" prefHeight="682.0" prefWidth="560.0">
       <children>
-         <VBox prefHeight="200.0" prefWidth="100.0" visible="false">
+         <VBox fx:id="startVbox" prefHeight="200.0" prefWidth="100.0" visible="false">
             <children>
                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="49.0" prefWidth="561.0" text="In the box below, enter path to text file">
                   <font>
@@ -33,7 +33,7 @@
                   </font></Label>
                <TextField>
                   <VBox.margin>
-                     <Insets top="28.0" />
+                     <Insets />
                   </VBox.margin>
                   <padding>
                      <Insets left="80.0" />
@@ -50,7 +50,7 @@
          </VBox>
          <StackPane fx:id="simulation" prefHeight="879.0" prefWidth="521.0">
             <children>
-               <FlowPane>
+               <FlowPane fx:id="simFPane">
                   <children>
                      <Label alignment="CENTER" contentDisplay="CENTER" text="Indoor">
                         <font>

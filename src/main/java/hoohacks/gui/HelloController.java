@@ -4,6 +4,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
@@ -23,10 +24,12 @@ public class HelloController {
     @FXML
     private VBox startVbox;
     @FXML
-    private VBox simVbox;
+    private FlowPane simFPane; // changed from VBox simVBox
 
     public void initialize(){
-        simVbox.setVisible(false);
+        //simFPane.setVisible(false);
+        startVbox.setVisible(true);
+        starting.setVisible(true);
         simulation.setVisible(false);
         goButton.setOnAction(e -> {
             onGoButton();
@@ -34,13 +37,15 @@ public class HelloController {
     }
     protected void onGoButton(){
         //run simulation with file
-        path = filePath.getText();
-        simVbox.setVisible(true);
-        System.out.println("go pressed");
+        //path = filePath.getText();
         startVbox.setVisible(false);
+        simulation.setVisible(true);
+        //simFPane.setVisible(true);
+        System.out.println("go pressed");
+
     }
     protected void onRestart(){
-        simVbox.setVisible(false);
+        simFPane.setVisible(false);
 
     }
 }
