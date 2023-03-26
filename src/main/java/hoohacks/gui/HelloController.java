@@ -3,18 +3,15 @@ package hoohacks.gui;
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.ScrollBar;
-import javafx.scene.control.TextField;
-import javafx.scene.layout.FlowPane;
-import javafx.scene.layout.Pane;
-import javafx.scene.layout.StackPane;
-import javafx.scene.layout.VBox;
+import javafx.scene.control.*;
+import javafx.scene.layout.*;
 
 public class HelloController {
     @FXML
     private StackPane simulation;
+
+    @FXML
+    private Slider timeSlider;
 
     @FXML
     private Button goButton;
@@ -35,9 +32,13 @@ public class HelloController {
     @FXML
     private ScrollBar sBar;
 
+    @FXML
+    private HBox startHBox;
+
     public void initialize(){
         startVbox.setVisible(true);
         starting.setVisible(true);
+        startHBox.setVisible(true);
         simulation.setVisible(false);
         goButton.setOnAction(e -> {
             onGoButton();
@@ -62,4 +63,6 @@ public class HelloController {
     protected void onExitButton(){
         Platform.exit();
     }
+
+
 }
