@@ -5,6 +5,7 @@ import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.ScrollBar;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.Pane;
@@ -30,6 +31,9 @@ public class HelloController {
 
     @FXML
     private Button exitButton;
+
+    @FXML
+    private ScrollBar sBar;
 
     public void initialize(){
         startVbox.setVisible(true);
