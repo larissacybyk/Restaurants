@@ -265,7 +265,7 @@
                                  <Font name="Lucida Sans Typewriter Regular" size="12.0" />
                               </font>
                               <FlowPane.margin>
-                                 <Insets left="86.0" />
+                                 <Insets left="82.0" />
                               </FlowPane.margin>
                            </Label>
                         </children>

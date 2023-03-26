@@ -2,6 +2,7 @@ package hoohacks.gui;
 
 import javafx.application.Application;
 import javafx.application.Platform;
+import javafx.beans.value.ChangeListener;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.layout.*;
@@ -63,6 +64,5 @@ public class HelloController {
     protected void onExitButton(){
         Platform.exit();
     }
-
 
 }
